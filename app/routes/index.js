@@ -6,13 +6,7 @@ import {
 } from 'react-router';
 
 // ----------- Pages Imports ---------------
-import Analytics from './Dashboards/Analytics';
 import ProjectsDashboard from './Dashboards/Projects';
-import System from './Dashboards/System';
-import Monitor from './Dashboards/Monitor'; 
-import Financial from './Dashboards/Financial';
-import Stock from './Dashboards/Stock';
-import Reports from './Dashboards/Reports';
 
 import Cards from './Cards/Cards';
 import CardsHeaders from './Cards/CardsHeaders';
@@ -114,14 +108,8 @@ export const RoutedContent = () => {
         <Switch>
             <Redirect from="/" to="/dashboards/projects" exact />
             
-            <Route path="/dashboards/analytics" exact component={Analytics} />
             <Route path="/dashboards/projects" exact component={ProjectsDashboard} />
-            <Route path="/dashboards/system" exact component={System} />
-            <Route path="/dashboards/monitor" exact component={Monitor} />
-            <Route path="/dashboards/financial" exact component={Financial} />
-            <Route path="/dashboards/stock" exact component={Stock} />
-            <Route path="/dashboards/reports" exact component={Reports} />
-           
+            
             { /*    Cards Routes     */ }
             <Route path='/cards/cards' exact component={Cards} />
             <Route path='/cards/cardsheaders' exact component={CardsHeaders} />
