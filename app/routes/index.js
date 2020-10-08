@@ -14,8 +14,6 @@ import Financial from './Dashboards/Financial';
 import Stock from './Dashboards/Stock';
 import Reports from './Dashboards/Reports';
 
-import Widgets from './Widgets';
-
 import Cards from './Cards/Cards';
 import CardsHeaders from './Cards/CardsHeaders';
 
@@ -123,9 +121,7 @@ export const RoutedContent = () => {
             <Route path="/dashboards/financial" exact component={Financial} />
             <Route path="/dashboards/stock" exact component={Stock} />
             <Route path="/dashboards/reports" exact component={Reports} />
-
-            <Route path='/widgets' exact component={Widgets} />
-            
+           
             { /*    Cards Routes     */ }
             <Route path='/cards/cards' exact component={Cards} />
             <Route path='/cards/cardsheaders' exact component={CardsHeaders} />
