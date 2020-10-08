@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
     Layout,
-    ThemeSelector,
     ThemeProvider,
-    PageConfigConsumer,
 } from './../components';
 
 import './../styles/bootstrap.scss';
@@ -36,7 +34,7 @@ class AppLayout extends React.Component {
         const { children } = this.props;
         
         return (
-            <ThemeProvider initialStyle="light" initialColor="primary">
+            <ThemeProvider initialStyle="dark" initialColor="primary">
                 <Layout sidebarSlim favIcons={ favIcons }>
                     { /* --------- Navbar ----------- */ }
                     <Layout.Navbar>
@@ -51,15 +49,6 @@ class AppLayout extends React.Component {
                     <Layout.Content>
                         { children }
                     </Layout.Content>
-
-                    { /* -- Theme Selector (DEMO) ----*/ }
-                    <PageConfigConsumer>
-                    {
-                        ({ sidebarHidden, navbarHidden }) => (
-                            <ThemeSelector styleDisabled={ sidebarHidden && navbarHidden } />
-                        )
-                    }
-                    </PageConfigConsumer>
                 </Layout>
             </ThemeProvider>
         );
