@@ -5,7 +5,7 @@ import {
     Sidebar,
     UncontrolledPopover,
     PopoverBody
-} from './../../../components';
+} from 'airframe-react-lib';
 
 import { FooterAuth } from '../Pages/FooterAuth';
 import { FooterText } from '../FooterText';
@@ -23,7 +23,7 @@ const SidebarBottomA = () => (
         { /* START Slim Only */ }
         <Sidebar.ShowSlim>
             <Sidebar.Section className="text-center">
-                
+
                 { /* Footer Text as Tooltip */ }
                 <Button
                     id="UncontrolledSidebarPopoverFooter"

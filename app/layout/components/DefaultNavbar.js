@@ -6,7 +6,7 @@ import {
     Nav,
     NavItem,
     SidebarTrigger
-} from './../../components';
+} from 'airframe-react-lib';
 
 import { NavbarActivityFeed } from './NavbarActivityFeed';
 import { NavbarMessages } from './NavbarMessages';

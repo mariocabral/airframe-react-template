@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import {
     Layout,
     ThemeProvider,
-} from './../components';
+} from 'airframe-react-lib';
+
+import config from './../../config';
 
 import './../styles/bootstrap.scss';
 import './../styles/main.scss';
-import './../styles/plugins/plugins.scss';
-import './../styles/plugins/plugins.css';
+import './../styles/plugins.scss';
 
 import {
     RoutedNavbars,
@@ -32,10 +33,15 @@ class AppLayout extends React.Component {
 
     render() {
         const { children } = this.props;
-        
+
         return (
             <ThemeProvider initialStyle="dark" initialColor="primary">
-                <Layout sidebarSlim favIcons={ favIcons }>
+                <Layout sidebarSlim favIcons={ favIcons }
+                siteDescription = {config.siteDescription}
+                siteKeywords = {config.siteKeywords}
+                siteTitle = {config.siteTitle}
+                siteCannonicalUrl = {config.siteCannonicalUrl}
+                >
                     { /* --------- Navbar ----------- */ }
                     <Layout.Navbar>
                         <RoutedNavbars />

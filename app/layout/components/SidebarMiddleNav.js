@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SidebarMenu } from './../../components';
+import { SidebarMenu } from 'airframe-react-lib';
 
 export const SidebarMiddleNav = () => (
     <SidebarMenu>

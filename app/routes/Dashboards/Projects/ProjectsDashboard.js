@@ -2,8 +2,8 @@ import React from 'react';
 import faker from 'faker/locale/en_US';
 import {
     Container
-} from './../../../components';
-import { setupPage } from './../../../components/Layout/setupPage';
+} from 'airframe-react-lib';
+import { setupPage } from 'airframe-react-lib';
 
 import { HeaderMain } from "../../components/HeaderMain";
 
@@ -13,7 +13,7 @@ const ProjectsDashboard = () => (
         <p>
             { faker.lorem.paragraph() }
        </p>
-        
+
     </Container>
 );
 

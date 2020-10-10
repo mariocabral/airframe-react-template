@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import {
     NavItem,
     NavLink
-} from './../../components';
+} from 'airframe-react-lib';
 
 const NavbarUser = (props) => (
     <NavItem { ...props }>

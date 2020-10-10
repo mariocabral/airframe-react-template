@@ -13,7 +13,7 @@ import {
     ListGroup,
     ListGroupItem,
     Media
-} from './../../components';
+} from 'airframe-react-lib';
 
 /*eslint-disable */
 const activityFeedIcons = [
@@ -78,7 +78,7 @@ const NavbarActivityFeed = (props) => (
                 </ListGroup>
             </ExtendedDropdown.Section>
 
-           
+
         </ExtendedDropdown>
     </UncontrolledDropdown>
 );

@@ -17,7 +17,7 @@ import {
     Input,
     InputGroupAddon,
     Button
-} from './../../components';
+} from 'airframe-react-lib';
 
 const messagesColors = [
     "text-success",
@@ -72,7 +72,7 @@ const NavbarMessages = (props) => (
                                         <span className="h6 pb-0 mb-0 d-flex align-items-center">
                                             { faker.name.firstName() } { faker.name.lastName() }
                                         </span>
-                                        
+
                                         <span className="ml-1 small">(23)</span>
                                         <span className="ml-auto small">Now</span>
                                     </span>

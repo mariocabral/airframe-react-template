@@ -2,7 +2,7 @@ import React from 'react';
 import faker from 'faker/locale/en_US';
 import { Link } from 'react-router-dom';
 
-import { 
+import {
     Sidebar,
     UncontrolledButtonDropdown,
     Avatar,
@@ -10,7 +10,8 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem
-} from './../../../components';
+} from 'airframe-react-lib';
+
 import { randomAvatar } from './../../../utilities';
 
 const avatarImg = randomAvatar();
@@ -26,12 +27,12 @@ const SidebarTopA = () => (
                             size="lg"
                             src={ avatarImg }
                             addOns={[
-                                <AvatarAddOn.Icon 
+                                <AvatarAddOn.Icon
                                     className="fa fa-circle"
                                     color="white"
                                     key="avatar-icon-bg"
                                 />,
-                                <AvatarAddOn.Icon 
+                                <AvatarAddOn.Icon
                                     className="fa fa-circle"
                                     color="success"
                                     key="avatar-icon-fg"
@@ -40,7 +41,7 @@ const SidebarTopA = () => (
                         />
                     </Sidebar.HideSlim>
                 </Link>
-                
+
                 <UncontrolledButtonDropdown>
                     <DropdownToggle color="link" className="pl-0 pb-0 btn-profile sidebar__link">
                         { faker.name.firstName() } { faker.name.lastName() }
@@ -81,12 +82,12 @@ const SidebarTopA = () => (
                     size="sm"
                     src={ avatarImg }
                     addOns={[
-                        <AvatarAddOn.Icon 
+                        <AvatarAddOn.Icon
                             className="fa fa-circle"
                             color="white"
                             key="avatar-icon-bg"
                         />,
-                        <AvatarAddOn.Icon 
+                        <AvatarAddOn.Icon
                             className="fa fa-circle"
                             color="success"
                             key="avatar-icon-fg"

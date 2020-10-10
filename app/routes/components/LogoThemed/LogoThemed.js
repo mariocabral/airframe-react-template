@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import { ThemeConsumer } from '../../../components/Theme';
+import { ThemeConsumer } from 'airframe-react-lib';
 
 const logos = {
     'white': require('./../../../images/logos/logo-white.svg'),
